@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        .info-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 300px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 100;
+        }
+        body {
+          margin: 0;
+          overflow: hidden;
+        }
+        canvas {
+          display: block;
+        }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- <div class="info-box">
+        <h1>Three.js App</h1>
+        <p>Welcome to Obama land, where the fox queen is about to award the Obama cube the highest honor in the land!
+           Use the controls or spacebar/numbers to choose music, and use orbit controls to move.</p> -->
+    <canvas id="c"></canvas>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
